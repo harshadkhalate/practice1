@@ -1,0 +1,18 @@
+<div>
+  <h1>Register</h1>
+  <input type="text" placeholder="Enter Username" name="username" [(ngModel)]="signupObj.username"><br>
+  <input type="email" placeholder="Enter Email" name="email" [(ngModel)]="signupObj.email"><br>
+  <input type="password" placeholder="Enter Password" name="password" [(ngModel)]="signupObj.password"><br>
+  <button type="submit" (click)="signUp()">Submit</button><br>
+</div>
+
+<div>
+  <h1>Login</h1>
+  <input type="text" placeholder="Enter Username" name="username" [(ngModel)]="loginObj.username"><br>
+  <input type="email" placeholder="Enter Email" name="email" [(ngModel)]="loginObj.email"><br>
+  <input type="password" placeholder="Enter Password" name="password" [(ngModel)]="loginObj.password"><br>
+  <button type="submit" (click)="signIn()">Submit</button>
+</div>
+
+  <h2 class="data">Username : {{displayName}}</h2>
+  <h2 class="data">Email: {{displayEmail}}</h2>
